@@ -8,9 +8,11 @@ pipeline {
     }
     stages {
         stage ('Run Docker') {
-            script {
-                sh "docker run hello-world"
-                sh "docker build -t ari ."
+            steps {
+                script {
+                    sh "docker run hello-world"
+                    sh "docker build -t ari ."
+                }   
             }
         }
         
