@@ -1,9 +1,4 @@
 pipeline {
-    agent {
-        docker {
-            image 'ariretiarno/jenkins:slave-jdk11'
-        }
-    }
     stages {
         stage ('Run Docker') {
             steps {
