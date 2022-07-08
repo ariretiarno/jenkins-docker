@@ -2,8 +2,6 @@ pipeline {
     agent {
         docker {
             image 'ariretiarno/jenkins:slave-jdk11'
-            label 'docker-slave'
-            args  '-v /tmp:/tmp'
         }
     }
     stages {
