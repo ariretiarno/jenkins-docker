@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'ariretiarno/jenkins:slave-jdk11'
+            image 'ariretiarno/docker:latest'
         }
     }
     stages {
